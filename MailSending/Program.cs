@@ -20,7 +20,7 @@ namespace MailSending
 
             // For Debug
 
-            //var service = new MPCR_Service();
+            //var service = new MailSendingService();
             //service.onDebug();
             //System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
 
@@ -28,26 +28,26 @@ namespace MailSending
 
             // FOR INSTALL
 
-            try
-            {
-                if (Environment.UserInteractive)
-                {
-                    string parameter = string.Concat("--uninstall");
-                    switch (parameter)
-                    {
-                        case "--install":
-                            ManagedInstallerClass.InstallHelper(new[] { Assembly.GetExecutingAssembly().Location });
-                            break;
-                        case "--uninstall":
-                            ManagedInstallerClass.InstallHelper(new[] { "/u", Assembly.GetExecutingAssembly().Location });
-                            break;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
+            //try
+            //{
+            //    if (Environment.UserInteractive)
+            //    {
+            //        string parameter = string.Concat("--uninstall");
+            //        switch (parameter)
+            //        {
+            //            case "--install":
+            //                ManagedInstallerClass.InstallHelper(new[] { Assembly.GetExecutingAssembly().Location });
+            //                break;
+            //            case "--uninstall":
+            //                ManagedInstallerClass.InstallHelper(new[] { "/u", Assembly.GetExecutingAssembly().Location });
+            //                break;
+            //        }
+            //    }
+            //}
+            //catch (Exception e)
+            //{
 
-            }
+            //}
 
 
             ServiceBase[] ServicesToRun;
