@@ -35,7 +35,6 @@ namespace MailSending
 
         //public void onDebug()
         //{
-
         //    OnStart(args);
         //    OnTimer(connectionString, e);
         //}
