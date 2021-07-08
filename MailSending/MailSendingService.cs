@@ -48,7 +48,6 @@ namespace MailSending
             timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
             timer.Start();
             System.Diagnostics.EventLog.WriteEntry(serviceName, "On timer for MailService");
-
         }
 
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs e)
@@ -68,7 +67,6 @@ namespace MailSending
             {
                 if (EmailSended != true)
                 {
-
                     System.Diagnostics.EventLog.WriteEntry(serviceName, "run notification service");
                     Dictionary<String, Object> MailParams = new Dictionary<String, Object>();
 
